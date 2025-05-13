@@ -1,0 +1,29 @@
+[package]
+name = "AgRV2K"
+version = "0.1.0"
+edition = "2021"
+description = "Peripheral access crate for the AgRV2K (AGM MCU)"
+keywords = [
+    "no-std",
+    "embedded",
+]
+categories = [
+    "no-std",
+    "embedded",
+    "hardware-support",
+]
+
+[dependencies]
+critical-section = { version = "1.0", optional = true }
+riscv = "0.12.1"
+riscv-peripheral = "0.2.0"
+riscv-rt = { version = "0.13.0", optional = true }
+vcell = "0.1.0"
+
+[features]
+rt = ["riscv-rt"]
+v-trap = ["rt", "riscv-rt/v-trap"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--generate-link-to-definition"]
