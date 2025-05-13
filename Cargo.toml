@@ -1,5 +1,5 @@
 [package]
-name = "AgRV2K"
+name = "AgRV2K_PAC"
 version = "0.1.0"
 edition = "2021"
 description = "Peripheral access crate for the AgRV2K (AGM MCU)"
@@ -12,6 +12,7 @@ categories = [
     "embedded",
     "hardware-support",
 ]
+repository = "https://github.com/823984418/res_list/AgRV2K_PAC"
 
 [dependencies]
 critical-section = { version = "1.0", optional = true }

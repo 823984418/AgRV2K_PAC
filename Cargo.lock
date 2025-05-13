@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "AgRV2K"
+name = "AgRV2K_PAC"
 version = "0.1.0"
 dependencies = [
  "critical-section",
